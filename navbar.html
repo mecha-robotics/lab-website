@@ -1,0 +1,129 @@
+ <header class="premium-navbar sticky top-0 z-50">
+      <nav
+        class="bg-gradient-to-r from-[#010532] to-[#12a1d5] text-white px-6 py-3 flex items-center justify-between shadow-md"
+      >
+        <!-- Left: Logo + Menus -->
+        <div class="flex items-center space-x-8">
+          <!-- Logo -->
+          <div class="flex items-center space-x-2">
+            <img
+              src="./images/logo/clean-logo.png"
+              alt="Lab Logo"
+              class="w-[4rem] object-contain"
+            />
+            <span class="font-bold text-lg">Robotics Lab</span>
+          </div>
+
+          <!-- Menu -->
+          <ul class="hidden md:flex space-x-6 items-center font-medium">
+            <li><a href="#" class="hover:text-[#fcfcfc] nav-link">Home</a></li>
+
+            <!-- People Dropdown -->
+            <li class="relative group">
+              <button class="hover:text-[#fcfcfc] nav-link">People ▾</button>
+              <ul
+                class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg w-40"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                    >Faculty</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                    >Alumni</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                    >Students</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-[#fcfcfc] nav-link">Vision</a>
+            </li>
+
+            <!-- Research Dropdown -->
+            <li class="relative group">
+              <button class="hover:text-[#fcfcfc] nav-link">Research ▾</button>
+              <ul
+                class="absolute hidden group-hover:block bg-white text-black mt-2 rounded shadow-lg w-44"
+              >
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                    >Publications</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                    >Patents</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="block px-4 py-2 hover:bg-gray-100"
+                    >Ongoing</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" class="hover:text-[#fcfcfc] nav-link">Publications</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-[#fcfcfc] nav-link">Contact</a>
+            </li>
+          </ul>
+          <div class="md:hidden cursor-pointer menu-btn">☰</div>
+        </div>
+
+        <!-- Right: Admin + Simulate -->
+        <div class="flex items-center space-x-4">
+          <!-- Admin -->
+          <div class="flex items-center space-x-2 cursor-pointer">
+            <!-- Replace with admin icon (fontawesome or svg) -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 12c2.28 0 4.12-1.84 4.12-4.12S14.28 3.76 12 3.76 7.88 5.6 7.88 7.88 9.72 12 12 12zm0 0c-3.92 0-7.12 2.52-7.12 5.62V20h14.24v-2.38c0-3.1-3.2-5.62-7.12-5.62z"
+              />
+            </svg>
+            <span class="font-medium">Admin</span>
+          </div>
+
+          <!-- Simulate Button -->
+          <button
+            class="bg-white text-[#010532] px-4 py-2 rounded-full font-semibold hover:bg-[#fcfcfc]"
+          >
+            Simulate
+          </button>
+        </div>
+      </nav>
+      <div
+        class="sidebar fixed top-0 left-[-250px] w-[250px] h-full bg-primary text-white shadow-lg transition-all duration-500 ease-in-out z-50"
+      >
+        <div class="flex justify-end p-4 cursor-pointer close-btn">✕</div>
+        <ul class="flex flex-col gap-4 px-6">
+          <li><a href="#" class="nav-link">Home</a></li>
+          <li><a href="#" class="nav-link">About</a></li>
+          <li><a href="#" class="nav-link">People</a></li>
+          <li><a href="#" class="nav-link">Collaborations</a></li>
+          <li><a href="#" class="nav-link">Publications</a></li>
+          <li><a href="#" class="nav-link">Events</a></li>
+          <li><a href="#" class="nav-link">Contact</a></li>
+          <li><a href="#" class="nav-link">Our Innovation</a></li>
+          <li><a href="#" class="nav-link">Admin Access</a></li>
+        </ul>
+      </div>
+    </header>

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robotics Lab | Mechanical Engineering Dept.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-700 flex flex-col min-h-screen">
+    <!-- Navbar -->
+      <div id="navbar"></div>
+    <!-- Hero Section -->
+     <section class="relative w-full hero overflow-hidden">
+        <div class="max-w-[100rem] mx-auto px-4 sm:px-6 lg:px-16 py-16 md:py-28 grid grid-cols-1 lg:grid-cols-5 gap-16 items-center min-h-[80vh]">
+          <!-- Left Content -->
+          <div class="flex flex-col gap-7 text-center lg:text-left lg:col-span-3 p-4">
+            <!-- Tag -->
+            <span class="inline-block px-4 py-1 text-xs md:text-sm font-semibold bg-blue-50 text-[#0a5384] rounded-full self-center lg:self-start shadow-sm tracking-wide uppercase">
+              Innovate. Automate. Elevate.
+            </span>
+            <!-- Heading -->
+            <h1 class="text-3xl lg:text-[3.5rem] font-extrabold leading-tight text-[#010532] drop-shadow-sm font-['Montserrat',sans-serif]">
+              Robotics & <span class="text-[#0a5384]">Mechatronics</span> Research Lab
+            </h1>
+            <!-- Subtext -->
+            <p class="text-gray-600 text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+                  Discover innovative research, collaborate on real-world projects, and contribute to transformative solutions in intelligent systems and automation.
+            </p>
+            <!-- Button -->
+        <div class="mt-4">
+        <span class="inline-block p-[2px] rounded-full bg-gradient-to-r from-[#12a1d5] to-[#010532]">
+          <a href="#"
+            class="flex items-center gap-2 bg-white text-[#0a5384] text-base font-semibold px-8 py-3 rounded-full transition-all duration-300 group hover:shadow-lg"
+          >
+            <span>Explore More</span>
+            <svg class="w-6 h-6 transition-transform duration-300 group-hover:translate-y-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+            </svg>
+          </a>
+        </span>
+      </div>
+    </div>
+    <!-- Right Content (Image + Cards) -->
+    <div class="relative flex justify-center items-center min-h-[350px] lg:col-span-2">
+      <!-- Main Person Image -->
+      <img src="./images/home/HeroImage01.webp" alt="Person with laptop"
+        class="w-72 sm:w-96 md:w-[28rem] lg:w-[32rem] xl:w-[36rem] max-w-full relative z-10 transition-transform duration-300 hover:scale-105"/>
+      <!-- Left Card (Followers) -->
+      <div class="absolute -left-8 bottom-8 bg-white rounded-xl shadow-lg  text-center border border-blue-100 flex justify-center items-center">
+  <img src="./images/home/ProjectImage01.webp" alt="Project"
+    class="w-full h-auto w-36 md:w-48 rounded-lg shadow-xl  "/>
+</div>
+      <!-- Top Left Card (Insights Overview) -->
+      <div class="absolute -left-12 top-8 bg-white rounded-xl shadow-lg p-2  border border-blue-100">
+        <img src="./images/home/HeroImage04.webp" alt="Project"
+    class="w-40 md:w-40 lg:w-48 h-auto rounded-sm"/>
+      </div>
+      <!-- Right Card (Post Insight) -->
+      <div class="absolute -right-12 top-14 bg-white rounded-xl shadow-lg p-2  border border-blue-100">
+        <img src="./images/home/HeroImage03.webp" alt="Project"
+    class="w-40 md:w-48 lg:w-64 h-auto rounded-sm"/>
+    <!--  icons groups-->
+    <!-- <div class="flex justify-between gap-2 mt-3 text-gray-500 text-lg">
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-linkedin"></i>
+    </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+ 
+    <main class="flex-grow">
+      <!-- Hero Section -->
+      <section class="about">
+        <div class="about__container">
+            <div class="about__header">
+                <h1 class="about__title font-extrabold leading-tight text-[#010532] drop-shadow-sm">
+                    Engineering the <span class="about__title-highlight">Future</span> with Robotics <br>& Mechatronics
+                </h1>
+                <p class="about__subtitle">
+                    Empowering students and researchers to solve real-world problems with advanced robotics, automation, and mechatronic systems.
+                </p>
+                
+                <!-- Tags -->
+                <div class="about__tags">
+                    <span class="about__tag-gradient">
+                    <span class="about__tag">Robotics Research</span>
+                    </span>
+                    <span class="about__tag-gradient">
+                    <span class="about__tag">Mechatronic Systems</span>
+                    </span>
+                    <span class="about__tag-gradient">
+                    <span class="about__tag">Student Projects</span>
+                    </span>
+                    <span class="about__tag-gradient">
+                    <span class="about__tag">Industry Collaboration</span>
+                    </span>
+                    <span class="about__tag-gradient">
+                    <span class="about__tag">Lab Facilities</span>
+                    </span>
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="about__content">
+                <!-- Left Column - Text Content -->
+                <div class="about__text">
+                    <h2 class="about__text-title">
+                        Advancing Innovation in Mechatronics.
+                    </h2>
+                    <p class="about__text-description">
+                        With a commitment to excellence in engineering and technology, our lab provides hands-on experience in designing, building, and testing intelligent machines and automated systems. We support undergraduate and graduate students, faculty researchers, and industry partners in collaborative projects that span a wide range of applications—from robotics for manufacturing and healthcare to smart automation and sensor-based control.
+                    </p>
+                    <p class="about__text-description">
+                        Whether you’re seeking opportunities for research, practical learning, or industrial partnership, the Robotics & Mechatronics Lab is your gateway to cutting-edge achievements in intelligent systems.
+                    </p>
+                <span class="about__button-gradient">
+                <a href="#" class="about__button about__button--gradient">
+                    <span>Our Research</span>
+                    <svg class="about__button-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                </span>
+                </div>
+
+                <!-- Right Column - Image -->
+                <div class="about__image-container">
+                    <img 
+                        src="./images/home/AboutImageDemo01.webp" 
+                        alt="All team image" 
+                        class="about__image"
+                    />
+                    <div class="about__image-decoration about__image-decoration__left"></div>
+                    <div class="about__image-decoration about__image-decoration__right"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- Notifications & Research Section -->
+      <section class="info-section">
+        <div class="info-section__container">
+          <!-- Left: Notifications -->
+          <div class="info-section__box info-section__box--notifications">
+            <h2 class="info-section__title">Notifications</h2>
+            <div class="info-section__scrolling-box">
+              <div class="info-section__scrolling-list" id="notifications-list">
+                  <p class="info-section__loading">Loading notifications...</p>
+              </div>
+          </div>
+          </div>
+          <!-- Right: Research Call-to-Action -->
+          <div class="info-section__box info-section__box--cta">
+            <h2 class="info-section__cta-title">Explore Our Research & Publications</h2>
+            <p class="info-section__cta-desc">
+              Discover some publications by our lab members and students—covering robotics, mechatronics, and innovative automation research.
+            </p>
+            <ul class="publications-list">
+        <li class="publications-list__item">
+          <a href="#" class="publications-list__link" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-lines publications-list__icon"></i>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit vel deleniti adipisci.
+            <span class="publications-list__external">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+        </li>
+        <li class="publications-list__item">
+          <a href="#" class="publications-list__link" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-lines publications-list__icon"></i>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere possimus praesentium architecto consectetur totam officiis.
+            <span class="publications-list__external">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+        </li>
+        <li class="publications-list__item">
+          <a href="#" class="publications-list__link" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-lines publications-list__icon"></i>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi, nulla.
+            <span class="publications-list__external">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+        </li>
+        <li class="publications-list__item">
+          <a href="#" class="publications-list__link" target="_blank" rel="noopener">
+            <i class="fa-solid fa-file-lines publications-list__icon"></i>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa doloribus eaque illo tempora?
+            <span class="publications-list__external">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </span>
+          </a>
+        </li>
+      </ul>
+            <span class="info-section__button-gradient info-section__button-margin">
+              <a href="research.html" class="info-section__button">
+                <span>See Research</span>
+                <svg class="info-section__button-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </span>
+          </div>
+        </div>
+    </section>
+
+    <!-- Patents Section -->
+      <section class="patents-section">
+      <div class="patents-section__container">
+        <!-- Left: Patent Info -->
+        <div class="patents-section__info">
+          <h2 class="patents-section__title">Our Patents</h2>
+          <p class="patents-section__subtitle">
+            Proudly presenting innovative algorithms patented by our lab, developed under the expertise of our dedicated instructor and assistant professor, Dr. Zahnu Priya Kalita.
+    These patents represent cutting-edge advancements in robotics and Mechatronics.
+          </p>
+          <div class="patents-section__list">
+            <!-- Patent 1 -->
+            <div class="patents-section__item">
+      <div class="patents-section__icon">
+        <i class="fa-solid fa-certificate"></i>
+      </div>
+      <div class="patents-section__details">
+        <div class="patents-section__item-header">
+          <h3 class="patents-section__item-title">Smart Adaptive Control Algorithm</h3>
+          <a href="https://example.com/patent1" target="_blank" rel="noopener" class="patents-section__link-btn" title="View Patent">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+        <p class="patents-section__item-desc">
+          Patent No. 1234567 – Enables real-time adaptation in robotic manipulators for dynamic environments.
+        </p>
+      </div>
+    </div>
+            <!-- Patent 2 -->
+            <div class="patents-section__item">
+      <div class="patents-section__icon">
+        <i class="fa-solid fa-certificate"></i>
+      </div>
+      <div class="patents-section__details">
+        <div class="patents-section__item-header">
+          <h3 class="patents-section__item-title">Smart Adaptive Control Algorithm</h3>
+          <a href="https://example.com/patent1" target="_blank" rel="noopener" class="patents-section__link-btn" title="View Patent">
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          </a>
+        </div>
+        <p class="patents-section__item-desc">
+          Patent No. 1234567 – Enables real-time adaptation in robotic manipulators for dynamic environments.
+        </p>
+      </div>
+    </div>
+          </div>
+        </div>
+        <!-- Right: Patent Holder Image -->
+        <div class="patents-section__image-box">
+      <img src="./images/home/zkmam.webp" alt="Patent Holder" class="patents-section__image" />
+      <div class="patents-section__professor-info">
+        <div class="patents-section__professor-name">Dr. Zahnu Priya Kalita</div>
+        <div class="patents-section__professor-designation">Assistant Professor</div>
+      </div>
+    </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Gallery Section -->
+      <section class="achievements-section">
+      <div class="achievements-section__container">
+        <!-- Left: Video & Carousel -->
+        <!-- Achievements Media Carousel (Left Part) -->
+    <div class="achievements-section__media">
+      <div class="achievements-section__carousel-container">
+        <div class="swiper achievements-section__swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1: YouTube Video -->
+            <div class="swiper-slide achievements-section__slide">
+              <div class="achievements-section__video-wrapper">
+      <iframe
+        class="achievements-section__video"
+        src="https://www.youtube.com/embed/IPukuYb9xWw?si=z2MPwmo9LcFHjnpT"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+            </div>
+            <!-- Slide 2: Image -->
+            <div class="swiper-slide achievements-section__slide">
+              <img src="./images/home/HeroImage04.webp" alt="Achievement 1" class="achievements-section__carousel-img" />
+            </div>
+            <!-- Slide 3: Image -->
+            <div class="swiper-slide achievements-section__slide">
+              <img src="./images/home/ProjectImage01.webp" alt="Achievement 2" class="achievements-section__carousel-img" />
+            </div>
+            <div class="swiper-slide achievements-section__slide">
+              <img src="./images/home/AboutImageDemo01.webp" alt="Achievement 2" class="achievements-section__carousel-img" />
+            </div>
+          </div>
+          <!-- Swiper navigation -->
+          <div class="swiper-button-next achievements-section__swiper-btn"></div>
+          <div class="swiper-button-prev achievements-section__swiper-btn"></div>
+          <div class="swiper-pagination achievements-section__swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+        <!-- Right: Achievements List -->
+        <div class="achievements-section__box achievements-section__box--achievements">
+          <h2 class="achievements-section__title">Achievements</h2>
+          <div class="achievements-section__scrolling-box">
+            <div class="achievements-section__scrolling-list" id="achievements-list">
+              <!-- Achievements will be injected here by JS, each as a <div> or <a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+  <div class="contact-section__container">
+    <h2 class="contact-section__title">Get In Touch</h2>
+    <div class="contact-section__content">
+      <div class="contact-section__form-gradient">
+        <div class="contact-section__form-box">
+          <form id="contactForm">
+            <div class="contact-section__form-group">
+              <label for="name" class="contact-section__label">Name</label>
+              <input type="text" id="name" name="name" class="contact-section__input" required />
+            </div>
+            <div class="contact-section__form-group">
+              <label for="email" class="contact-section__label">Email</label>
+              <input type="email" id="email" name="email" class="contact-section__input" required />
+            </div>
+            <div class="contact-section__form-group">
+              <label for="message" class="contact-section__label">Message</label>
+              <textarea id="message" name="message" rows="5" class="contact-section__input" required></textarea>
+            </div>
+            <span class="contact-section__button-gradient">
+  <button type="submit" class="contact-section__button">
+    <span>Send Message</span>
+    <svg class="contact-section__button-icon" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/>
+    </svg>
+  </button>
+</span>
+          </form>
+          <div id="form-status" class="contact-section__form-status"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    </section>
+    </main>
+
+    <!-- footer and pre footer -->
+    <div id="footer"></div>
+
+    <!-- Swiper.js script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      // Import Navbar
+      document.addEventListener("DOMContentLoaded", () => {
+      const navbarContainer = document.getElementById("navbar");
+      fetch("navbar.html")
+        .then(res => res.text())
+        .then(data => {
+          navbarContainer.innerHTML = data;
+        });
+    });
+
+      // Import Footer
+      document.addEventListener("DOMContentLoaded", () => {
+      const navbarContainer = document.getElementById("footer");
+      fetch("footer.html")
+        .then(res => res.text())
+        .then(data => {
+          navbarContainer.innerHTML = data;
+        });
+    });
+
+    </script>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/2d82e8e8a4.js" crossorigin="anonymous"></script>
+  </body>
+</html>
