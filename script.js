@@ -85,19 +85,40 @@ document.addEventListener('DOMContentLoaded', () => {
           prevEl: ".swiper-button-prev",
         },
     });
+  // Mobile/Tablet: wire existing menu button and sidebar with backdrop
+  const menuBtn = document.querySelector('.menu-btn');
+  const sidebar = document.querySelector('.sidebar');
+  let navBackdrop = null;
+
+  const ensureBackdrop = () => {
+    if (!navBackdrop) {
+      navBackdrop = document.createElement('div');
+      navBackdrop.className = 'nav-backdrop';
+      document.body.appendChild(navBackdrop);
+      navBackdrop.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+        navBackdrop.classList.remove('is-visible');
+      });
+    }
+  };
+
+  if (menuBtn && sidebar) {
+    ensureBackdrop();
+    menuBtn.addEventListener('click', () => {
+      sidebar.classList.add('open');
+      navBackdrop.classList.add('is-visible');
+    });
+    const closeBtn = sidebar.querySelector('.close-btn');
+    if (closeBtn) {
+      closeBtn.addEventListener('click', () => {
+        sidebar.classList.remove('open');
+        navBackdrop.classList.remove('is-visible');
+      });
+    }
+  }
 });
 
-  const menuBtn = document.querySelector(".menu-btn");
-  const sidebar = document.querySelector(".sidebar");
-  const closeBtn = document.querySelector(".close-btn");
-
-  menuBtn.addEventListener("click", () => {
-    sidebar.classList.add("open");
-  });
-
-  closeBtn.addEventListener("click", () => {
-    sidebar.classList.remove("open");
-  });
+  // legacy sidebar handlers removed
 
 // About section start here
  function handleAboutCTA() {
